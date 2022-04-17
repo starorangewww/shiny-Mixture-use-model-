@@ -1,0 +1,13 @@
+#Read Me
+#Main introduction
+This interface of mixture use model is created by program R and shiny, and
+it can show that the estimation of interesting parameters, calculating AIC of mixture use model, and predicting the preference of latent variable.
+Especially, you can download the csv file, the content includes the predicting the preference of latent variable and interesting variables.
+
+#The description of function in the interface
+1.Input your dataset: please refer the format of demo dataset, and the demo dataset needs to include the lifetime of using online banking for customers, the status of customers in the end of following up time, 
+  and at least one variable. 
+2.Choose the model type for the willingness preference: Three model can be choosed: logistic regression, debaised LASSO model, and random forest model.
+3.Selecting the column for lifetime and status: the default setting is column 1 and  column 2, respectively.
+4.Selecting the bootstrapping sample size for estimated variance of estimators: the default setting is 100, and the running time could spend roughly 20 minutes in demo dataset, it depends on your data size.
+5.Selecting the converge range and iterating time: the defaults set 0.01 and 30 times, respectively.
